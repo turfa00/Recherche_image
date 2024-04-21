@@ -1,6 +1,9 @@
 # Mise en correspondance d'images parallèle
 
-Simple overview of use/purpose.
+La mise en correspondance d'images est une tâche fondamentale dans de nombreux domaines.
+L'objectif de ce projet est de développer un système de mise en correspondance d'images robuste en utilisant l'algorithme de somme de différences au carré (SSD). 
+Cependant, la complexité computationnelle de cet algorithme peut être élevée, en particulier pour de grandes images ou un grand nombre de correspondances. 
+Donc ce programme est parallélisé avec openmp pour accélérer le calcul en répartissant la charge de travail entre plusieurs threads.
 
 ## Description
 
