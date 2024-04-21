@@ -5,34 +5,8 @@ L'objectif de ce projet est de développer un système de mise en correspondance
 Cependant, la complexité computationnelle de cet algorithme peut être élevée, en particulier pour de grandes images ou un grand nombre de correspondances. 
 Donc ce programme est parallélisé avec openmp pour accélérer le calcul en répartissant la charge de travail entre plusieurs threads.
 
-## Description
-
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
+### Éxécution
+Pour l'éxécution du programme principale, il suffit d'éxécuter avec l'ajout de flags -fopenmp pour le support d'OpenMp.
+Par exemple: gcc main.c -o main -fopenmp
+Le programme principale prends deux arguments dont l'image d'éntrée et l'image de recherche. Si il'y a pas d'erreur, en sortie, vous aurez l'image avec une boite rouge qui encercle
+là où l'image à été trouvé.
