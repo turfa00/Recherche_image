@@ -30,6 +30,7 @@ unsigned char *getGrayImg(unsigned char *inputImg, int inputImgWidth, int inputI
     return outputImg;
 }
 
+// SSD: SDD: Sum of square differences
 double SSD(unsigned char *searchImg, unsigned char *inputImg, int index, int searchImgWidth, int searchImgHeight, int inputImgWidth, int inputImgHeight)
 {
     // Get actual x and y of input images
